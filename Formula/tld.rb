@@ -5,21 +5,21 @@
 class Tld < Formula
   desc "CLI for the tlDiagram architecture diagramming system"
   homepage "https://tldiagram.com"
-  version "0.1.6-beta.1"
+  version "0.1.6-beta.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.1/tld_Darwin_x86_64.tar.gz"
-      sha256 "5d7ea916923fd9d4c7d3bae0474592f0b95dff6f071cae302e3be612caa986db"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Darwin_x86_64.tar.gz"
+      sha256 "d3b48bbbfa57556311f9c8ba829ba898daf47fb32161234e7f997c2dee6a7316"
 
       define_method(:install) do
         bin.install "tld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.1/tld_Darwin_arm64.tar.gz"
-      sha256 "464bc3a9897d50d966dc2cfeb2e9fa45560756cf4fd368b0c5a4252165ad30c9"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Darwin_arm64.tar.gz"
+      sha256 "c0a05214632aa6efcd3ada93787a2e12d20a8dc23b1498f271aff69716fd2e24"
 
       define_method(:install) do
         bin.install "tld"
@@ -29,15 +29,15 @@ class Tld < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.1/tld_Linux_x86_64.tar.gz"
-      sha256 "0c80055e6196a12570a8220a63a3dda3e11b756ad189c895b58bbce47f7de943"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Linux_x86_64.tar.gz"
+      sha256 "b1601c7d0091b5af76ea4c03c1569a7737971d64dff9c6fef2c203a4883ac6e7"
       define_method(:install) do
         bin.install "tld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.1/tld_Linux_arm64.tar.gz"
-      sha256 "66dfe0f21bef90c2e316657e09a77faee3455ab1b337cd9a61d7049974966ce2"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Linux_arm64.tar.gz"
+      sha256 "cbe42711d5a90e9be1fdcc6390a1ce6680a32379360782f2614134579ce9325b"
       define_method(:install) do
         bin.install "tld"
       end
