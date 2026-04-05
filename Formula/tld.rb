@@ -5,21 +5,21 @@
 class Tld < Formula
   desc "CLI for the tlDiagram architecture diagramming system"
   homepage "https://tldiagram.com"
-  version "0.1.6-beta.2"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Darwin_x86_64.tar.gz"
-      sha256 "d3b48bbbfa57556311f9c8ba829ba898daf47fb32161234e7f997c2dee6a7316"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.7/tld_Darwin_x86_64.tar.gz"
+      sha256 "cee7788ad38d26d32ad5a963baa6cf6e568b779d333ad1e74e1fcef0c92cca21"
 
       define_method(:install) do
         bin.install "tld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Darwin_arm64.tar.gz"
-      sha256 "c0a05214632aa6efcd3ada93787a2e12d20a8dc23b1498f271aff69716fd2e24"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.7/tld_Darwin_arm64.tar.gz"
+      sha256 "9355dcafbbfe4234f947ed523d85496d989f2a0501b2fb3056fd8eab7a19a25d"
 
       define_method(:install) do
         bin.install "tld"
@@ -29,15 +29,15 @@ class Tld < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Linux_x86_64.tar.gz"
-      sha256 "b1601c7d0091b5af76ea4c03c1569a7737971d64dff9c6fef2c203a4883ac6e7"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.7/tld_Linux_x86_64.tar.gz"
+      sha256 "25e1d7c2631018cc4a45aadc0529cc7ec2294a46f0f9def0f4d02fb445eb4dee"
       define_method(:install) do
         bin.install "tld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.6-beta.2/tld_Linux_arm64.tar.gz"
-      sha256 "cbe42711d5a90e9be1fdcc6390a1ce6680a32379360782f2614134579ce9325b"
+      url "https://github.com/Mertcikla/tld-cli/releases/download/v0.1.7/tld_Linux_arm64.tar.gz"
+      sha256 "479de77bb0a589c326e2f095c998f200670eaecf980308b6b5c877bc0656b2d7"
       define_method(:install) do
         bin.install "tld"
       end
